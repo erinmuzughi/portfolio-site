@@ -1,4 +1,5 @@
-export default aboutMe(){
+
+function aboutMe(){
 
 return(
 <>
@@ -20,8 +21,9 @@ Check out the other pages on this site to see some of my references, recent proj
 
 </div>
 <div name="aboutMePicture">
-
+// ToDo: Take a professional picture.
+<img src="https://www.facebook.com/photo.php?fbid=2292729607453557&set=pb.100001496198284.-2207520000&type=3" alt= "Brittany Robinson 2024"/>
 </div>
 </>
 )
-}
+};
