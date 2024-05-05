@@ -13,11 +13,10 @@ function App() {
        <BrowserRouter>
        <Routes>
         <Route path="/" element={<HomePage/>} />
-        <Route path="AboutMe" element={<AboutMe/>} />
-   
+        <Route path="aboutme" element={<AboutMe/>} />
+   <Route path="contactme" element={<ContactMe/>} />
         </Routes>
         </BrowserRouter>
-< ContactMe />
       </header>
     </div>
  );
