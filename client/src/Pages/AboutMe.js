@@ -3,6 +3,7 @@ export default function aboutMe(){
 
 return(
 <>
+
 {/* //<Header/> */}
 
 <div name="aboutMeText">
