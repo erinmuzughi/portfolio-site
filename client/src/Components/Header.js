@@ -16,7 +16,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-export default function header() {
+export default function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -159,21 +159,3 @@ export default function header() {
     </AppBar>
   );
 }
-
-
-
-
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-
-// export default function header(){
-//     return(
-//         <>
-//         <a class="header-home" href="/">Home</a>
-//         <button class="header-homeButton" type="button"></button>
-//         <a class="header-aboutme" href="/AboutMe">About Me</a>
-//         <button class="header-aboutmeButton" type="button"></button>
-//         </>                 
-//     )
-// }
