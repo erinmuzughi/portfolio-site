@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import AboutMe from './Pages/AboutMe';
 import HomePage from './Pages/HomePage';
 import ContactMe from './Pages/ContactMe';
+import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<HomePage/>} />
         <Route path="aboutme" element={<AboutMe/>} />
         <Route path="contactme" element={<ContactMe/>} />
+        <Route path="projects" element={<Projects/>} />
         <Route path="experience" element={<Experience/>} />
         </Routes>
         </BrowserRouter>
