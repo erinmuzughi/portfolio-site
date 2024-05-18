@@ -3,8 +3,8 @@ export default function aboutMe(){
 
 return(
 <>
-// ToDo: Import header component when made.
-//<Header/>
+{/* // ToDo: Import header component when made.
+//<Header/> */}
 
 <div name="aboutMeText">
 You might be surprised to learn that the Writing Robin is not in fact a bird at all- but a woman.
