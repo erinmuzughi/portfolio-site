@@ -7,20 +7,24 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
+import { Typography } from '@mui/material';
 
 export default function Experience() {
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
+  padding: theme.spacing(2),
+  textAlign: 'left',
   color: theme.palette.text.secondary,
+  display: 'flex',
+  flexDirection: 'column',
+  height: '100%',
 }));
 
   return (
    <div>
-    <Box sx={{ flexGrow: 1 }}>
+    <Box marginLeft={'150px'} marginRight={'150px'} marginBottom={'100px'} sx={{ flexGrow: 1 }} >
       <Grid container spacing={2}>
         <Grid xs={8}> 
         {/* //TODO: Figure out how to make the heights of these two containers match the tallest container */}
@@ -33,18 +37,33 @@ const Item = styled(Paper)(({ theme }) => ({
         </Grid>
         <Grid xs={4}>
           <Item>
-            <h4>Degree</h4>
-            <body>University of State</body>
-            <h4>Web Development Course</h4>
-            <body>LaunchCode</body>
-            <h4>Certification</h4>
-            <body>Name of Organization</body>
+            <Typography variant='h6'>
+            Degree
+            </Typography>
+            <Typography>
+            University Name
+            LaunchCode
+            </Typography>
+            <br></br>
+            <Typography variant='h6'>
+            Web Development 
+            </Typography>
+            <Typography>
+            LaunchCode
+            </Typography>
+            <br></br>
+            <Typography variant='h6'>
+            Certification
+            </Typography>
+            <Typography>
+            Name of Organization
+            </Typography>
           </Item>
         </Grid>
       </Grid>
     </Box>
     
-    {/* <div> */}
+    <Box marginLeft={'150px'} marginRight={'150px'} sx={{ flexGrow: 1 }}>
       <Accordion defaultExpanded>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -84,6 +103,7 @@ const Item = styled(Paper)(({ theme }) => ({
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </AccordionDetails>
       </Accordion>
+      </Box>
     </div>
   )
   }
