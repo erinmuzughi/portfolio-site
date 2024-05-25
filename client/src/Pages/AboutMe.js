@@ -1,12 +1,15 @@
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Header from '../Components/Header';
 
 export default function aboutMe(){
 
 return(
 <>
 
-{/* //<Header/> */}
+<Header></Header>
 
-<div name="aboutMeText">
+<Box height={400} width={200} my={4} display="flex" alignItems="center" gap={4} p={2} sx={{ border: '2pxsolid grey'}}>
 You might be surprised to learn that the Writing Robin is not in fact a bird at all- but a woman.
 
 For the past 10 years I’ve been writing, learning, and working in the education field. While I have loved fostering the young minds of America’s youth, I also have a deep yearning for learning myself. I never thought that I would be capable of learning to code or understanding the nuances of software development- which made it that much more of a challenge.
@@ -19,7 +22,7 @@ Since graduating from the Web Development Bootcamp in February of 2024, I have b
 
 Check out the other pages on this site to see some of my references, recent projects, and what I’ve been learning. Happy Writing!
 
-</div>
+</Box>
 <div name="aboutMePicture">
 // ToDo: Take a professional picture.
 <img src="https://www.facebook.com/photo.php?fbid=2292729607453557&set=pb.100001496198284.-2207520000&type=3" alt= "Brittany Robinson 2024"/>
