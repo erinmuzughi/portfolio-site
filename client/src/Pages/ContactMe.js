@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import { withStyles } from "@mui/material";
+import { withStyles } from "@mui/material/styles";
 import PropTypes from "prop-types";
 import Typography from '@mui/material/Typography';
 import CssBaseline from '@mui/material/CssBaseline';
