@@ -3,9 +3,9 @@ import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import AboutMe from './Pages/AboutMe';
 import HomePage from './Pages/HomePage';
-import ContactMe from './Pages/ContactMe';
 import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
+import ContactMe from './Pages/ContactMe';
 
 
 function App() {
