@@ -5,6 +5,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Typography from '@mui/material/Typography';
 import { Card, CardContent } from "@mui/material";
+import Header from "../Components/Header";
 
 // npm i @emailjs/browser
 
@@ -37,6 +38,8 @@ const ContactMeTest = () => {
   }
 
   return (
+    <>
+    <Header></Header>
     <Grid>
         <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
           <CardContent>
@@ -75,6 +78,7 @@ const ContactMeTest = () => {
           </CardContent>
         </Card>
       </Grid>
+      </>
   );
 }
 
