@@ -6,6 +6,7 @@ import HomePage from './Pages/HomePage';
 import ContactMe from './Pages/ContactMe';
 import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
+import AdminSignIn from './Pages/AdminSignIn';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="contactme" element={<ContactMe/>} />
         <Route path="projects" element={<Projects/>} />
         <Route path="experience" element={<Experience/>} />
+        <Route path="adminsignin" element={<AdminSignIn/>} />
         </Routes>
         </BrowserRouter>
       </header>
