@@ -5,6 +5,7 @@ import AboutMe from './Pages/AboutMe';
 import HomePage from './Pages/HomePage';
 import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
+import AdminSignIn from './Pages/AdminSignIn';
 import ContactMe from './Pages/ContactMe';
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="contactme" element={<ContactMe/>} />
         <Route path="projects" element={<Projects/>} />
         <Route path="experience" element={<Experience/>} />
+        <Route path="adminsignin" element={<AdminSignIn/>} />
         </Routes>
         </BrowserRouter>
       </header>
