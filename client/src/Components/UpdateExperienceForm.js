@@ -16,7 +16,11 @@ export default function updateExperienceForm(){
     <>
     <form onSubmit={handleSubmit}>
         <h2>Update Your Experience</h2>
-        <input type="text" value= {newExperience} onChange={handleExperienceChange}></input>
+        <input type="text"  value= "Job Title" onChange={handleExperienceChange}></input>
+        <input type="text"  value= "Company" onChange={handleExperienceChange}></input>
+        <input type="text"  value= "Start Date" onChange={handleExperienceChange}></input>
+        <input type="text"  value= "End Date" onChange={handleExperienceChange}></input>
+
 
 
     </form>
