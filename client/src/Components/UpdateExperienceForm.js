@@ -7,7 +7,7 @@ export default function updateExperienceForm(){
         e.preventDefault();
     };
 
-    const handleExperiencechange = (e) => {
+    const handleExperienceChange = (e) => {
         //update the experienceData file with new entry upon  submission
       };
     
@@ -16,7 +16,7 @@ export default function updateExperienceForm(){
     <>
     <form onSubmit={handleSubmit}>
         <h2>Update Your Experience</h2>
-        <input type="text" value= {newExperience} onChange={handleExperiencechange}></input>
+        <input type="text" value= {newExperience} onChange={handleExperienceChange}></input>
 
 
     </form>

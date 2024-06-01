@@ -7,6 +7,7 @@ import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
 import AdminSignIn from './Pages/AdminSignIn';
 import ContactMe from './Pages/ContactMe';
+import AdminDashboard from './Pages/AdminDashboard';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="projects" element={<Projects/>} />
         <Route path="experience" element={<Experience/>} />
         <Route path="adminsignin" element={<AdminSignIn/>} />
+        <Route path="admindashboard" element={<AdminDashboard/>} />
         </Routes>
         </BrowserRouter>
       </header>

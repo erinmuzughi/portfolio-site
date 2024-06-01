@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function updateProjetsForm(){
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -7,6 +8,7 @@ export default function updateProjetsForm(){
 
     const handleProjectsChange = (e) => {
         //update the projectsData file with new entry upon  submission
+        projectData.push({newExperience})
       };
     
 
