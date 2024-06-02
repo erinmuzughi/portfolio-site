@@ -1,22 +1,32 @@
 import React from "react";
 import { projects } from "../Helpers/projectData";
+import { useState } from "react";
 
 
 
-export default function updateProjetsForm(){
-    const handleSubmit = (e) => {
-        e.preventDefault();
+export default function UpdateProjetsForm(){
 
-        const newProject= new projects ({title}, {subtitle}, {image}, {altText}, {HyperLink})
-
-        projects.push({newProject})
-    };
-    
-    const [title, setTitle]= useState('');
+  const [title, setTitle]= useState('');
     const [subtitle, setSubtitle]= useState('');
     const [image, setImage]= useState('');
     const [altText, setAlttext]= useState('');
-    const [hyperLink, setHyperlink]= useState('');
+    const [hyperLink, setHyperLink]= useState('');
+    const handleSubmit = (e) => {
+
+        e.preventDefault();
+
+        const newProject= {
+          title: title,
+            subtitle: subtitle,
+            image: image,
+            altText: altText,
+            hyperLink: hyperLink
+        }
+
+        projects.push(newProject);
+    };
+    
+    
     
    const handleTitleChange= (e) => {
     setTitle(e.target.value);
@@ -35,18 +45,18 @@ export default function updateProjetsForm(){
 };
 
 const handleHyperLinkChange= (e) => {
-  setHyperlink(e.target.value);
+  setHyperLink(e.target.value);
 };
 
   return(
     <>
     <form onSubmit={handleSubmit}>
         <h2>Update Your Projects</h2>
-        <input type="text" value= {title} onChange={handleTitleChange}></input>
-        <input type="text" value= {subtitle} onChange={handleSubtitleChange}></input>
-        <image type="text" value= {image} onChange={handleImageChange}></image>
-        <input type="text" value= {altText} onChange={handleAltTextChange}></input>
-        <input type="text" value= {hyperLink} onChange={handleHyperLinkChange}></input>
+        <input type="text" value= {title} onChange={handleTitleChange} placeholder="Title"></input>
+        <input type="text" value= {subtitle} onChange={handleSubtitleChange} placeholder="Subtitle"></input>
+        <input type="text" value= {image} onChange={handleImageChange} placeholder="image"></input>
+        <input type="text" value= {altText} onChange={handleAltTextChange} placeholder="AltText"></input>
+        <input type="text" value= {hyperLink} onChange={handleHyperLinkChange} placeholder="HyperLink"></input>
         <button type="submit">Save</button>
 
     </form>
