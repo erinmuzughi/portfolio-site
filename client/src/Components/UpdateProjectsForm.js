@@ -11,6 +11,7 @@ export default function UpdateProjetsForm(){
     const [image, setImage]= useState('');
     const [altText, setAlttext]= useState('');
     const [hyperLink, setHyperLink]= useState('');
+
     const handleSubmit = (e) => {
 
         e.preventDefault();
@@ -54,10 +55,10 @@ const handleHyperLinkChange= (e) => {
         <h2>Update Your Projects</h2>
         <input type="text" value= {title} onChange={handleTitleChange} placeholder="Title"></input>
         <input type="text" value= {subtitle} onChange={handleSubtitleChange} placeholder="Subtitle"></input>
-        <input type="text" value= {image} onChange={handleImageChange} placeholder="image"></input>
+        <input type="text" value= {image} onChange={handleImageChange} placeholder="Image"></input>
         <input type="text" value= {altText} onChange={handleAltTextChange} placeholder="AltText"></input>
         <input type="text" value= {hyperLink} onChange={handleHyperLinkChange} placeholder="HyperLink"></input>
-        <button type="submit">Save</button>
+        <button type="submit" onChange= {handleSubmit}>Save</button>
 
     </form>
     </>
