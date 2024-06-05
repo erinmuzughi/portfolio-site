@@ -12,23 +12,7 @@ export default function UpdateProjetsForm(){
     const [altText, setAlttext]= useState('');
     const [hyperLink, setHyperLink]= useState('');
 
-    const handleSubmit = (e) => {
 
-        e.preventDefault();
-
-        const newProject= {
-          title: title,
-            subtitle: subtitle,
-            image: image,
-            altText: altText,
-            hyperLink: hyperLink
-        }
-
-        projects.push(newProject);
-    };
-    
-    
-    
    const handleTitleChange= (e) => {
     setTitle(e.target.value);
    };
@@ -49,6 +33,37 @@ const handleHyperLinkChange= (e) => {
   setHyperLink(e.target.value);
 };
 
+const handleSubmit = (e) => {
+
+  e.preventDefault();
+
+  const project= {title, subtitle, image, altText, hyperLink};
+
+  console.log(project);
+
+  const newProject= {
+    title: project.title,
+    subtitle: project.subtitle, 
+    image: project.image, 
+    altText: project.altText, 
+    hyperLink: project.hyperLink
+  }
+
+  projects.push(newProject);
+
+  // const newProject= {
+  //   title: title,
+  //     subtitle: subtitle,
+  //     image: image,
+  //     altText: altText,
+  //     hyperLink: hyperLink
+  // }
+
+  // console.log(newProject)
+
+  // projects.push(newProject);
+};
+
   return(
     <>
     <form onSubmit={handleSubmit}>
@@ -58,7 +73,7 @@ const handleHyperLinkChange= (e) => {
         <input type="text" value= {image} onChange={handleImageChange} placeholder="Image"></input>
         <input type="text" value= {altText} onChange={handleAltTextChange} placeholder="AltText"></input>
         <input type="text" value= {hyperLink} onChange={handleHyperLinkChange} placeholder="HyperLink"></input>
-        <button type="submit" onChange= {handleSubmit}>Save</button>
+        <button type="submit" >Save</button>
 
     </form>
     </>
