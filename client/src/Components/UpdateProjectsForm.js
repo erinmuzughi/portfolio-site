@@ -51,18 +51,9 @@ const handleSubmit = (e) => {
 
   projects.push(newProject);
 
-  // const newProject= {
-  //   title: title,
-  //     subtitle: subtitle,
-  //     image: image,
-  //     altText: altText,
-  //     hyperLink: hyperLink
-  // }
+  console.log(projects)
 
-  // console.log(newProject)
-
-  // projects.push(newProject);
-};
+}
 
   return(
     <>
