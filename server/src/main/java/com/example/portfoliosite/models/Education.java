@@ -20,4 +20,9 @@ public class Education {
     public void setCompany(String company) {
         this.company = company;
     }
+
+    public Education(String title, String company) {
+        this.title = title;
+        this.company = company;
+    }
 }

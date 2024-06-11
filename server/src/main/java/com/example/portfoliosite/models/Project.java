@@ -47,4 +47,12 @@ public class Project {
     public void setHyperlink(String hyperlink) {
         this.hyperlink = hyperlink;
     }
+
+    public Project(String title, String subtitle, String image, String altText, String hyperlink) {
+        this.title = title;
+        this.subtitle = subtitle;
+        this.image = image;
+        this.altText = altText;
+        this.hyperlink = hyperlink;
+    }
 }

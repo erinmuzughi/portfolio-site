@@ -48,4 +48,12 @@ public class Experience {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public Experience(String jobTitle, String company, String startDate, String endDate, String description) {
+        this.jobTitle=jobTitle;
+        this.company=company;
+        this.startDate=startDate;
+        this.endDate=endDate;
+        this.description=description;
+    }
 }
