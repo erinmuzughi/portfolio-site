@@ -16,8 +16,7 @@ Specifically, I don't wan the text on the Project Card Component centered, I wan
   }
 }
 
-.App-header {
-  background-color: #282c34;
+/* .App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +24,7 @@ Specifically, I don't wan the text on the Project Card Component centered, I wan
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
