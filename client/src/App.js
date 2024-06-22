@@ -8,7 +8,6 @@ import routes from './routes';
 function App() {
   return (
     <div className="App">
-      <header>
       <Router>
       <Layout>
         <Routes>
@@ -18,7 +17,6 @@ function App() {
         </Routes>
       </Layout>
     </Router>
-      </header>
     </div>
  );
 }
