@@ -12,9 +12,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-
-
-const pages = ['About Me', 'Experience', 'Projects', 'Contact'];
+import { Link } from 'react-router-dom';
+import routes from '../routes'; 
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -89,9 +88,13 @@ export default function Header() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {routes.map(({ name, path }) => (
+                <MenuItem key={name} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                    <Link to={path} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      {name}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -116,13 +119,15 @@ export default function Header() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {routes.map(({ name, path }) => (
               <Button
-                key={page}
+                key={name}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                component={Link}
+                to={path}
               >
-                {page}
+                {name}
               </Button>
             ))}
           </Box>

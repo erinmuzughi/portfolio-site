@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Header from '../Components/Header';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 
@@ -16,9 +15,6 @@ export default function aboutMe(){
 
 return(
 <>
-
-<Header></Header>
-
 <Box height={400} width={200} my={4} display="flex" alignItems="center" gap={4} p={2} sx={{ border: '2pxsolid grey'}}>
     <Item>
     ou might be surprised to learn that the Writing Robin is not in fact a bird at all- but a woman.
