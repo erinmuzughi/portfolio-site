@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,9 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-
-
-const pages = ['About Me', 'Experience', 'Projects', 'Contact'];
+import { Link } from 'react-router-dom';
+import routes from '../routes';
+import styles from './Header.module.css';
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -38,10 +38,10 @@ export default function Header() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className={styles.header}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className={styles.logo} />
           <Typography
             variant="h6"
             noWrap
@@ -56,6 +56,7 @@ export default function Header() {
               color: 'inherit',
               textDecoration: 'none',
             }}
+            className={styles.logo}
           >
             LOGO
           </Typography>
@@ -89,14 +90,18 @@ export default function Header() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {routes.map(({ name, path }) => (
+                <MenuItem key={name} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                    <Link to={path} style={{ textDecoration: 'none', color: 'inherit' }} className={styles['navbar-link']}>
+                      {name}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} className={styles.logo} />
           <Typography
             variant="h5"
             noWrap
@@ -112,17 +117,21 @@ export default function Header() {
               color: 'inherit',
               textDecoration: 'none',
             }}
+            className={styles.logo}
           >
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {routes.map(({ name, path }) => (
               <Button
-                key={page}
+                key={name}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                component={Link}
+                to={path}
+                className={styles['navbar-link']}
               >
-                {page}
+                {name}
               </Button>
             ))}
           </Box>
@@ -130,7 +139,7 @@ export default function Header() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" className={styles.avatar} />
               </IconButton>
             </Tooltip>
             <Menu
