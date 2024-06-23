@@ -38,7 +38,7 @@ export default function Header() {
   };
 
   return (
-    <AppBar position="static" className={styles.header}>
+    <AppBar position="static" sx={{ backgroundColor: '#062925' }} className={styles.header}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className={styles.logo} />
