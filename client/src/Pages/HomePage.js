@@ -1,12 +1,11 @@
 import React from 'react';
+import HomeComponent from '../Components/HomeComponent';
 
 export default function homePage(){
 
     return (
-        <>
-        <div className='homePageWriting'>
-            <h1>Writes Code</h1>
+        <div>
+        <HomeComponent />
         </div>
-        </>
     )
 }
