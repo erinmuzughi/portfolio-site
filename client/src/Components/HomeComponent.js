@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./Home.module.css"; // Make sure to create this CSS file with the provided styles
+import { Button } from "@mui/material";
 
 const HomeComponent = () => {
   useEffect(() => {
@@ -7,7 +8,6 @@ const HomeComponent = () => {
       "Hello", 
       "Hey!", 
       "Hi",
-      "Welcome",
     ];
 
     function typeWriter(text, i, fnCallback) {
@@ -40,6 +40,7 @@ const HomeComponent = () => {
     return (
       <div className={styles.container}>
         <h1 className={styles.typingText}></h1>
+        <p className= {styles.paragraph}>I'm Brittany Robinson. <a href= '/about'>It's nice to e-meet you!</a> </p>
       </div>
     );
   };
