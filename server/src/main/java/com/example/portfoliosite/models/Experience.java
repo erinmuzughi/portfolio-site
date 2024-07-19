@@ -1,6 +1,16 @@
 package com.example.portfoliosite.models;
 
+import jakarta.persistence.Entity;
+
+import java.util.Objects;
+
+@Entity
 public class Experience {
+
+    private int id;
+
+    private static int nextId =1;
+
 
     private String jobTitle;
 
@@ -49,11 +59,29 @@ public class Experience {
         this.description = description;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public Experience(String jobTitle, String company, String startDate, String endDate, String description) {
         this.jobTitle=jobTitle;
         this.company=company;
         this.startDate=startDate;
         this.endDate=endDate;
         this.description=description;
+        this.id= nextId;
+        nextId++;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Experience that)) return false;
+        return getId() == that.getId();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
     }
 }
