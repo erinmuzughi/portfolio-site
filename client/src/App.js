@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+<<<<<<< HEAD
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import AboutMe from './Pages/AboutMe';
 import HomePage from './Pages/HomePage';
@@ -8,11 +9,17 @@ import Experience from './Pages/Experience';
 import AdminSignIn from './Pages/AdminSignIn';
 import ContactMe from './Pages/ContactMe';
 import AdminDashboard from './Pages/AdminDashboard';
+=======
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from './Components/Layout';
+import routes from './routes';
+>>>>>>> main
 
 
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
       <header className="App-header">
        <BrowserRouter>
        <Routes>
@@ -23,9 +30,17 @@ function App() {
         <Route path="experience" element={<Experience/>} />
         <Route path="adminsignin" element={<AdminSignIn/>} />
         <Route path="admindashboard" element={<AdminDashboard/>} />
+=======
+      <Router>
+      <Layout>
+        <Routes>
+        {routes.map(({ path, component: Component }) => (
+            <Route key={path} path={path} element={<Component />} />
+          ))}
+>>>>>>> main
         </Routes>
-        </BrowserRouter>
-      </header>
+      </Layout>
+    </Router>
     </div>
  );
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -12,11 +13,16 @@
       <change beforePath="$PROJECT_DIR$/client/src/Components/UpdateProjectsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/UpdateProjectsForm.js" afterDir="false" />
     </list>
 >>>>>>> Stashed changes
+=======
+  <component name="ChangeListManager">
+    <list default="true" id="30d53b57-bd26-4848-bf7b-bf4bb8ced867" name="Changes" comment="" />
+>>>>>>> main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/server">
       <ProjectState />
@@ -45,12 +51,15 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> main
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -58,6 +67,13 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+=======
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2iHftU5wtsDprJLRR9y5es84oU8" />
+>>>>>>> main
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,6 +82,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "admin-dashboard-components",
     "last_opened_file_path": "/Users/erinstudent/Desktop/Development/PersonalProjects/portfolio-site",
@@ -111,6 +128,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714074445214</updated>
+=======
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30d53b57-bd26-4848-bf7b-bf4bb8ced867" name="Changes" comment="" />
+      <created>1719152638807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719152638807</updated>
+>>>>>>> main
     </task>
     <servers />
   </component>

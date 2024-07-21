@@ -1,0 +1,28 @@
+/* Header.module.css */
+.header {
+  padding: 10px;
+  margin-bottom: 50px;
+  }
+  
+  .navbar-link {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+
+  .navbar-link:hover {
+    color: #3A9188;
+  }
+  
+  .logo {
+    pointer-events: none;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+  }
+
+  .avatar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example hover effect */
+  }
+  

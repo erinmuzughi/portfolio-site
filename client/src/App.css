@@ -1,9 +1,6 @@
-.App {
-  text-align: center; 
-}
-
-/* TODO: Use Scoped CSS so that not all text across the entire site is centered by default.
-Specifically, I don't wan the text on the Project Card Component centered, I want it left aligned */
+/* .App {
+  padding: 50px;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -14,17 +11,6 @@ Specifically, I don't wan the text on the Project Card Component centered, I wan
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
