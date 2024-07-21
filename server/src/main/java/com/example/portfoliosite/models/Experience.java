@@ -3,6 +3,7 @@ package com.example.portfoliosite.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
 
 
 import java.util.Objects;
@@ -14,12 +15,16 @@ public class Experience {
     @GeneratedValue
     private int id;
 
-
+@NotNull(message = "Please enter a job title")
     private String jobTitle;
-
+    @NotNull(message = "Please enter a company")
     private String company;
+    @NotNull(message = "Please enter a start date")
     private String startDate;
+    @NotNull(message = "Please enter a end date, or put 'present' if still employed")
+
     private String endDate;
+    @NotNull(message = "Please enter a description of job duties")
     private String description;
 
     public String getJobTitle() {

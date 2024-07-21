@@ -3,6 +3,7 @@ package com.example.portfoliosite.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.lang.NonNull;
 
 import java.util.Objects;
@@ -13,8 +14,9 @@ public class Education {
     @GeneratedValue
     private int id;
 
-
+@NotNull(message = "Please enter a title")
     private String title;
+@NotNull(message= "Please enter a company")
     private String company;
 
     public String getTitle() {
