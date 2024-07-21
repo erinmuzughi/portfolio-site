@@ -17,7 +17,7 @@ return(
 <>
 <Box height={400} width={200} my={4} display="flex" alignItems="center" gap={4} p={2} sx={{ border: '2pxsolid grey'}}>
     <Item>
-    ou might be surprised to learn that the Writing Robin is not in fact a bird at all- but a woman.
+    You might be surprised to learn that the Writing Robin is not in fact a bird at all- but a woman.
 
 For the past 10 years I’ve been writing, learning, and working in the education field. While I have loved fostering the young minds of America’s youth, I also have a deep yearning for learning myself. I never thought that I would be capable of learning to code or understanding the nuances of software development- which made it that much more of a challenge.
 

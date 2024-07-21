@@ -1,7 +1,8 @@
 import React from "react";
 import UpdateExperienceForm from "../Components/UpdateExperienceForm";
-import UpdateProjetsForm from "../Components/UpdateExperienceForm";
-import UpdateAboutMeForm from "../Components/UpdateAboutMeForm";
+import UpdateProjetsForm from "../Components/UpdateProjectsForm";
+import UpdateEducationForm from "../Components/UpdateEducationForm";
+
 
 
 export default function adminDashboard(){
@@ -9,7 +10,8 @@ export default function adminDashboard(){
         <>
         <UpdateExperienceForm/>
         <UpdateProjetsForm/>
-        <UpdateAboutMeForm/>
+        <UpdateEducationForm/>
+    
         </>
     )
 }
