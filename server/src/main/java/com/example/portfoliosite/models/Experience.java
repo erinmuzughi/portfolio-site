@@ -1,15 +1,18 @@
 package com.example.portfoliosite.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
 
 import java.util.Objects;
 
 @Entity
 public class Experience {
 
+    @Id
+    @GeneratedValue
     private int id;
-
-    private static int nextId =1;
 
 
     private String jobTitle;
@@ -69,9 +72,9 @@ public class Experience {
         this.startDate=startDate;
         this.endDate=endDate;
         this.description=description;
-        this.id= nextId;
-        nextId++;
     }
+
+    public Experience(){}
 
     @Override
     public boolean equals(Object o) {

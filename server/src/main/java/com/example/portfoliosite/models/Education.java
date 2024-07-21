@@ -1,14 +1,16 @@
 package com.example.portfoliosite.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 import java.util.Objects;
 
 @Entity
 public class Education {
+    @Id
+    @GeneratedValue
     private int id;
-
-    private static int nextId;
 
     private String title;
     private String company;
@@ -36,9 +38,9 @@ public class Education {
     public Education(String title, String company) {
         this.title = title;
         this.company = company;
-        this.id=nextId;
-        nextId++;
     }
+
+    public Education(){}
 
     @Override
     public boolean equals(Object o) {
